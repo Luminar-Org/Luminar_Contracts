@@ -13,7 +13,7 @@ contract SetupDexAggregator is Script {
         // Get environment variables
         address addressResolver = vm.envAddress("ADDRESS_RESOLVER");
         string memory rpc = vm.envString("SOCKET_RPC");
-        vm.createSelectFork(rpc);
+        // vm.createSelectFork(rpc);
 
         uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
         vm.startBroadcast(deployerPrivateKey);
